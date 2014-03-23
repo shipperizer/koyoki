@@ -1,0 +1,21 @@
+<%= form_for :contact, url: '/contacts', :method => :create do |f| %>
+  <div class="fields">
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_area :name %>
+    </p>
+    <p>
+      <%= f.label :surname %><br>
+      <%= f.text_area :surname %>
+    </p>
+    <p>
+      <%= f.label :number %><br>
+      <%= f.text_area :number %>
+    </p>
+    
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
